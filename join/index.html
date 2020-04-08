@@ -30,9 +30,10 @@
   </script>
 </head>
 <body>
-  <iframe id="iframe" src="https://script.google.com/a/sas.edu.sg/macros/s/AKfycbx8lADIIcCQdhBAcKoKESBxeIPKOIJo0fCcOtdTdqNKZUhhCdJC/execc"></iframe>
-<script
-  document.getElementById("iframe").src=String(window.location.href).replace("https://sasserviceportal.com/join/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbx8lADIIcCQdhBAcKoKESBxeIPKOIJo0fCcOtdTdqNKZUhhCdJC/exec?join=")
+  <iframe id="iframe" src="https://script.google.com/a/sas.edu.sg/macros/s/AKfycbx8lADIIcCQdhBAcKoKESBxeIPKOIJo0fCcOtdTdqNKZUhhCdJC/exec"></iframe>
+<script>
+  window.alert('hi')
+  document.getElementById("iframe").setAttribute('src',String(window.location.href).replace("https://sasserviceportal.com/join/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbx8lADIIcCQdhBAcKoKESBxeIPKOIJo0fCcOtdTdqNKZUhhCdJC/exec?join="))
 </script>
 </body>
 
