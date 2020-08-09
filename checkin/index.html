@@ -28,12 +28,21 @@
     gtag('js', new Date());
     gtag('config', 'UA-145355800-1');
   </script>
+  <script>
+    if(navigator.userAgent.indexOf('iPhone')>-1 && navigator.userAgent.indexOf('Chrome')<0){
+        setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
+        window.location = String(window.location.href).replace("https",'googlechromes');
+      }
+      else if(navigator.userAgent.indexOf('Chrome')<0){
+        window.location = "https://sasserviceportal.com/unsupported";
+      }
+      else{
+        document.getElementById("iframe").setAttribute('src',String(window.location.href).replace("https://sasserviceportal.com/checkin/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?checkin="))
+      }
+  </script>
 </head>
 <body>
   <iframe id="iframe" src="https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec"></iframe>
-<script>
-  document.getElementById("iframe").setAttribute('src',String(window.location.href).replace("https://sasserviceportal.com/checkin/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?checkin="))
-</script>
 </body>
 
 </html>
