@@ -30,7 +30,6 @@
   </script>
   <script>
     var originalUrl = String(window.location.href)
-    document.getElementById('test').innerHTML=navigator.userAgent;
     /**if(navigator.userAgent.indexOf('iPhone')>-1 && navigator.userAgent.indexOf('Chrome')<0){
         setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
         window.location = String(window.location.href).replace("https",'googlechromes');
@@ -43,5 +42,8 @@
 <body>
   <h1 id='test'></h1>
 </body>
-
+<script>
+  console.log(navigator.userAgent);
+      document.getElementById('test').innerHTML=navigator.userAgent;
+    </script>
 </html>
