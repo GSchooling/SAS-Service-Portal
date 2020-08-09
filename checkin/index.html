@@ -37,14 +37,13 @@
       else if(navigator.userAgent.indexOf('Chrome')<0){
         window.location = "https://sasserviceportal.com/unsupported";
       }
-      else{
-        console.log(originalUrl);
-        document.getElementById("iframe").setAttribute('src',originalUrl.replace("https://sasserviceportal.com/checkin/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?checkin="))
-      }
   </script>
 </head>
 <body>
   <iframe id="iframe" src="https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec"></iframe>
+  <script>
+    document.getElementById("iframe").setAttribute('src',originalUrl.replace("https://sasserviceportal.com/checkin/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?checkin="))
+  </script>
 </body>
 
 </html>
