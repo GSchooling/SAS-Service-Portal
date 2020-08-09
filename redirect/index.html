@@ -31,8 +31,14 @@
     gtag('config', 'UA-145355800-1');
   </script>
   <script>
-      setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
-      window.location = "googlechromes://sasserviceportal.com";
+      if(navigator.userAgent.indexOf('iPhone')>-1){
+        setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
+        window.location = "googlechromes://sasserviceportal.com";
+      }
+      else if(navigator.userAgent.indexOf('Chrome')<0){
+        window.location = "https://sasserviceportal.com/unsupported";
+        
+      }
   </script>
 </head>
 <body>
