@@ -28,6 +28,15 @@
     gtag('js', new Date());
     gtag('config', 'UA-145355800-1');
   </script>
+    <script>
+      if(navigator.userAgent.indexOf('iPhone')>-1 && navigator.userAgent.indexOf('CriOS')<0){
+          setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
+          window.location = String(window.location.href).replace("https",'googlechromes');
+        }
+        else if(navigator.userAgent.indexOf('iPhone')<0 && navigator.userAgent.indexOf('Chrome')<0){
+          window.location = "https://sasserviceportal.com/unsupported";
+        }
+    </script>
   </script>
 </head>
 <body>
