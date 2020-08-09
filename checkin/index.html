@@ -30,20 +30,20 @@
   </script>
   <script>
     var originalUrl = String(window.location.href)
-    /**if(navigator.userAgent.indexOf('iPhone')>-1 && navigator.userAgent.indexOf('Chrome')<0){
+    if(navigator.userAgent.indexOf('iPhone')>-1 && navigator.userAgent.indexOf('CriOS')<0){
         setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
         window.location = String(window.location.href).replace("https",'googlechromes');
       }
       else if(navigator.userAgent.indexOf('Chrome')<0){
         window.location = "https://sasserviceportal.com/unsupported";
-      }**/
+      }
   </script>
 </head>
 <body>
-  <h1 id='test'></h1>
+  <iframe id="iframe" src="https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec"></iframe>
+  <script>
+    document.getElementById("iframe").setAttribute('src',originalUrl.replace("https://sasserviceportal.com/checkin/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?checkin="))
+  </script>
 </body>
-<script>
-  console.log(navigator.userAgent);
-      document.getElementById('test').innerHTML=navigator.userAgent;
-    </script>
+
 </html>
