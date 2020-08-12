@@ -40,10 +40,16 @@
   </script>
 </head>
 <body>
+  <div class="alert alert-danger" role="alert" style='margin: 0;'>
+    <strong>Not Loading?</strong> Please ensure that you are using Google Chrome and are logged into your <strong>SAS Google Account</strong>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
   <iframe id="iframe" src="https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec"></iframe>
-<script>
-  document.getElementById("iframe").setAttribute('src',originalUrl.replace("https://sasserviceportal.com/join/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?join="))
-</script>
+  <script>
+    document.getElementById("iframe").setAttribute('src',originalUrl.replace("https://sasserviceportal.com/join/?","https://script.google.com/a/sas.edu.sg/macros/s/AKfycbxkLpJVXghY9YtqQChLQcrengfaZelICbwyINGM1wmZRBFypkU/exec?join="))
+  </script>
 </body>
 
 </html>
