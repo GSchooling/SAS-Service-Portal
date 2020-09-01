@@ -1,0 +1,19 @@
+{
+  "name": "attendence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gcp-metadata": "^4.1.0",
+    "google-auth-library": "^6.0.1",
+    "google-spreadsheet": "^3.0.13",
+    "pug": "^3.0.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
