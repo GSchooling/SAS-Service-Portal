@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAS Service Portal - Check-in</title>
+  <style>
+    body {
+      border: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    iframe { 
+      display: block;
+      background: #000;
+      border: none;
+      height: 100vh;
+      width: 100vw; 
+      margin: 0px;
+      padding: 0px;
+    }
+  </style>
+  <meta name="google-site-verification" content="2Gv09a2VqBnmwY3JvipitSC2jHsOO5Zir4K-ESvKt4c" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145355800-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-145355800-1');
+  </script>
+  <script>
+    var originalUrl = String(window.location.href)
+    if(navigator.userAgent.indexOf('iPhone')>-1 && navigator.userAgent.indexOf('CriOS')<0){
+        setTimeout(function () { window.location = "https://sasserviceportal.com/unsupported"; }, 100);
+        window.location = String(window.location.href).replace("https",'googlechromes');
+      }
+      else if(navigator.userAgent.indexOf('iPhone')<0 && navigator.userAgent.indexOf('Chrome')<0){
+        window.location = "https://sasserviceportal.com/unsupported";
+      }
+  </script>
+</head>
+<body>
+    <iframe id="iframe" src="https://service-portal-287516.appspot.com"></iframe>
+    <script>
+        //document.getElementById("iframe").setAttribute('src',String(window.location.href).replace("https://sasserviceportal.com/log/","https://service-portal-287516.appspot.com/"))
+    </script>
+</body>
+
+</html>
